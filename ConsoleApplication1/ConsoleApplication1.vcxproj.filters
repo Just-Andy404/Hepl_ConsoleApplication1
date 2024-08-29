@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Debit Card">
+      <UniqueIdentifier>{99362a82-4d5c-4c1f-9667-15f4d4740264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{ebd91edd-2fa6-4e39-9c8d-5a3d837d610f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Account">
+      <UniqueIdentifier>{bfe43496-804d-4761-b52a-7520a4c6c0b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Card">
+      <UniqueIdentifier>{739002fe-b11a-4f60-91e6-f8c688eb96dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pay">
+      <UniqueIdentifier>{8d628b6a-f8ea-437a-a78a-3a6e266bc2f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CreditCard">
+      <UniqueIdentifier>{96c8b53f-ee2c-4031-8f0c-1b5c65adf697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SaveFile">
+      <UniqueIdentifier>{050fda27-1fce-45fe-9a5a-cf484fe7bc8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConsoleApplication1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debitСards.cpp">
+      <Filter>Debit Card</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>Card</Filter>
+    </ClCompile>
+    <ClCompile Include="Account.cpp">
+      <Filter>Account</Filter>
+    </ClCompile>
+    <ClCompile Include="CreditCard.cpp">
+      <Filter>CreditCard</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="debitСards.h">
+      <Filter>Debit Card</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>Card</Filter>
+    </ClInclude>
+    <ClInclude Include="Account.h">
+      <Filter>Account</Filter>
+    </ClInclude>
+    <ClInclude Include="PaymentSystem.h">
+      <Filter>Pay</Filter>
+    </ClInclude>
+    <ClInclude Include="CreditCard.h">
+      <Filter>CreditCard</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveData.h">
+      <Filter>SaveFile</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

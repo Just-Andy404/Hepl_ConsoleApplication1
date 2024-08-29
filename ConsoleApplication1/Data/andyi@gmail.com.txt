@@ -1,0 +1,8 @@
+User name: Andrii
+Account: andyi@gmail.com
+Password: Password
+Card type: Credit
+Card number: 6 9 8 5 9 2 4 1 8 3 9 3 8 7 8 6
+Balance: -1030.000000
+Amount: 1000, Date: 2007-08-09, Category: p
+Amount: 30, Date: 2007-08-06, Category: p

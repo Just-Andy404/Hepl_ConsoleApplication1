@@ -1,0 +1,6 @@
+User name: Andy
+Account: andy@gmail.com
+Password: Password
+Card type: Credit
+Card number: 6 9 8 5 9 2 4 1 8 3 9 3 8 7 8 6
+Balance: 0
