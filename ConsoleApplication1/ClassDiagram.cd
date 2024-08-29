@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DebitCard" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAACAAAACACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>debitСards.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Account" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACgAAgCAAAAABAAAAAAAC0AAAIAAAAAAAIEAAAQAEA=</HashCode>
+      <FileName>Account.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Card" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABAAAAhAgCAAgQAAAAggAAAAAgEAAAAAAACAIAAAEA=</HashCode>
+      <FileName>Card.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PaymentSystem" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAQAAAEAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaymentSystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreditCard" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkAAAAQAAAAAAAAAAQAAAACAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>CreditCard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveData" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAgIAAEAAAAAAAAAAQAA=</HashCode>
+      <FileName>SaveData.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CardType" Collapsed="true">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Card.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

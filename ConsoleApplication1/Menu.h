@@ -218,10 +218,10 @@ void Menu(Account& Acc) {
             break;
         case 4:
             if (DebitCard* debitCard = dynamic_cast<DebitCard*>(card)) {
-                debitCard->reportsExpensesCategories(Acc); // Вызов метода payment() для дебетовой карты
+                debitCard->reportsExpensesCategories(); // Вызов метода payment() для дебетовой карты
             }
             else if (CreditCard* creditCard = dynamic_cast<CreditCard*>(card)) {
-                creditCard->reportsExpensesCategories(Acc); // Вызов метода payment() для кредитной карты
+                creditCard->reportsExpensesCategories(); // Вызов метода payment() для кредитной карты
             }
             break;
         case 5:

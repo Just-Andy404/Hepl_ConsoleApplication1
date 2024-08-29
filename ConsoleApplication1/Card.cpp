@@ -28,55 +28,55 @@ void Card::printNumsOfCard() const
     cout << endl;
 }
 
-void Card::reportsExpensesCategories(const Account& acc)
+void Card::reportsExpensesCategories()
 {
-    string filePath = "data/" + acc.getUserAccount() + ".txt";
-    ifstream inFile(filePath);
+    //string filePath = "data/" + acc.getUserAccount() + ".txt";
+    //ifstream inFile(filePath);
 
-    if (!inFile.is_open()) {
-        cerr << "Unable to open file for reading." << endl;
-        return;
-    }
+    //if (!inFile.is_open()) {
+    //    cerr << "Unable to open file for reading." << endl;
+    //    return;
+    //}
 
-    struct Expense {
-        double amount;
-        string date;
-        string category;
-    };
+    //struct Expense {
+    //    double amount;
+    //    string date;
+    //    string category;
+    //};
 
-    vector<Expense> expenses;
-    string line;
+    //vector<Expense> expenses;
+    //string line;
 
-    while (getline(inFile, line)) {
-        if (line.find("Amount:") != string::npos) {
-            Expense exp;
-            size_t pos = line.find("Amount:") + 7;
-            exp.amount = stod(line.substr(pos, line.find(",") - pos));
+    //while (getline(inFile, line)) {
+    //    if (line.find("Amount:") != string::npos) {
+    //        Expense exp;
+    //        size_t pos = line.find("Amount:") + 7;
+    //        exp.amount = stod(line.substr(pos, line.find(",") - pos));
 
-            pos = line.find("Date:") + 5;
-            exp.date = line.substr(pos, line.find(",") - pos);
+    //        pos = line.find("Date:") + 5;
+    //        exp.date = line.substr(pos, line.find(",") - pos);
 
-            pos = line.find("Category:") + 9;
-            exp.category = line.substr(pos);
+    //        pos = line.find("Category:") + 9;
+    //        exp.category = line.substr(pos);
 
-            expenses.push_back(exp);
-        }
-    }
-    inFile.close();
+    //        expenses.push_back(exp);
+    //    }
+    //}
+    //inFile.close();
 
-    // Сортировка расходов по дате
-    for (size_t i = 0; i < expenses.size(); ++i) {
-        for (size_t j = i + 1; j < expenses.size(); ++j) {
-            if (expenses[i].date > expenses[j].date) {
-                swap(expenses[i], expenses[j]);
-            }
-        }
-    }
+    //// Сортировка расходов по дате
+    //for (size_t i = 0; i < expenses.size(); ++i) {
+    //    for (size_t j = i + 1; j < expenses.size(); ++j) {
+    //        if (expenses[i].date > expenses[j].date) {
+    //            swap(expenses[i], expenses[j]);
+    //        }
+    //    }
+    //}
 
-    // Вывод отсортированных данных
-    for (const auto& exp : expenses) {
-        cout << "Amount: " << exp.amount << ", Date: " << exp.date << ", Category: " << exp.category << endl;
-    }
+    //// Вывод отсортированных данных
+    //for (const auto& exp : expenses) {
+    //    cout << "Amount: " << exp.amount << ", Date: " << exp.date << ", Category: " << exp.category << endl;
+    //}
 }
 
 bool Card::checkNumsOfCard(const int cardNumber[16]) const

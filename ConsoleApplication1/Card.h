@@ -3,7 +3,7 @@
 #include <string>
 #include <cstdlib>
 #include <ctime>
-#include "Account.h"
+//#include "Account.h"
 
 using namespace std;
 
@@ -31,7 +31,7 @@ public:
 
     void generateNumsOfCard();
     void printNumsOfCard() const;
-    void reportsExpensesCategories(const Account& acc);
+    void reportsExpensesCategories();
     bool checkNumsOfCard(const int cardNumber[16]) const;
     const int* getNumsOfCard() const;
     double getBalance() const;
