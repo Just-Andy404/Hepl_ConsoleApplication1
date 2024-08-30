@@ -30,53 +30,17 @@ void Card::printNumsOfCard() const
 
 void Card::reportsExpensesCategories()
 {
-    //string filePath = "data/" + acc.getUserAccount() + ".txt";
-    //ifstream inFile(filePath);
+    //// Получаем 3D массив всех трат пользователя
+    //    std::vector<std::vector<std::vector<std::string>>> expenses = analyzeExpensesFile(fileName);
 
-    //if (!inFile.is_open()) {
-    //    cerr << "Unable to open file for reading." << endl;
-    //    return;
-    //}
-
-    //struct Expense {
-    //    double amount;
-    //    string date;
-    //    string category;
-    //};
-
-    //vector<Expense> expenses;
-    //string line;
-
-    //while (getline(inFile, line)) {
-    //    if (line.find("Amount:") != string::npos) {
-    //        Expense exp;
-    //        size_t pos = line.find("Amount:") + 7;
-    //        exp.amount = stod(line.substr(pos, line.find(",") - pos));
-
-    //        pos = line.find("Date:") + 5;
-    //        exp.date = line.substr(pos, line.find(",") - pos);
-
-    //        pos = line.find("Category:") + 9;
-    //        exp.category = line.substr(pos);
-
-    //        expenses.push_back(exp);
-    //    }
-    //}
-    //inFile.close();
-
-    //// Сортировка расходов по дате
-    //for (size_t i = 0; i < expenses.size(); ++i) {
-    //    for (size_t j = i + 1; j < expenses.size(); ++j) {
-    //        if (expenses[i].date > expenses[j].date) {
-    //            swap(expenses[i], expenses[j]);
-    //        }
+    //// Выводим данные о тратах
+    //std::cout << "User Expenses Categories Report:" << std::endl;
+    //for (const auto& expense : expenses) {
+    //    for (const auto& detail : expense) {
+    //        std::cout << "Amount: " << detail[0] << ", Date: " << detail[1] << ", Category: " << detail[2] << std::endl;
     //    }
     //}
 
-    //// Вывод отсортированных данных
-    //for (const auto& exp : expenses) {
-    //    cout << "Amount: " << exp.amount << ", Date: " << exp.date << ", Category: " << exp.category << endl;
-    //}
 }
 
 bool Card::checkNumsOfCard(const int cardNumber[16]) const
@@ -112,3 +76,4 @@ void Card::logExpense(double amount, const string& date, const string& category,
         cerr << "Unable to open log file for writing." << endl;
     }
 }
+

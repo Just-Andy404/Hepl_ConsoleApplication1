@@ -2,9 +2,8 @@
 #include <iostream>
 #include <cstdlib>  // Для rand() и srand()
 #include <ctime>    // Для time()
-#include "Card.h"
 using namespace std;
-
+class Card;
 class Account
 {
 private:

@@ -4,7 +4,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 #include "Card.h"
+
 
 using namespace std;
 
@@ -122,5 +124,38 @@ public:
             cerr << "Unable to open file for reading: " << filePath << endl;
         }
         return 0.0; // Возвращаем 0, если файл не удалось открыть или не найдено значение баланса
+    }
+
+    vector<vector<vector<string>>> analyzeExpensesFile(const Account& acc) {
+        string fileName = "Data/" + acc.getUserAccount() + ".txt";
+        std::vector<std::vector<std::vector<std::string>>> expenses;
+        std::ifstream file(fileName);
+        std::string line;
+
+        while (std::getline(file, line)) {
+            if (line.find("Amount:") != std::string::npos) {
+                std::vector<std::vector<std::string>> expense;
+                std::string amount, date, category;
+
+                // Извлечение суммы
+                size_t amountPos = line.find("Amount:");
+                size_t datePos = line.find(", Date:");
+                amount = line.substr(amountPos + 7, datePos - amountPos - 7);
+
+                // Извлечение даты
+                size_t categoryPos = line.find(", Category:");
+                date = line.substr(datePos + 7, categoryPos - datePos - 7);
+
+                // Извлечение категории
+                category = line.substr(categoryPos + 11);
+
+                // Заполнение массива
+                expense.push_back({ amount, date, category });
+                expenses.push_back(expense);
+            }
+        }
+
+        file.close();
+        return expenses;
     }
 };

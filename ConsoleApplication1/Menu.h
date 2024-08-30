@@ -1,4 +1,3 @@
-#include "Account.h"
 #include "Card.h"
 #include "CreditCard.h"
 #include "debitСards.h"
@@ -225,9 +224,21 @@ void Menu(Account& Acc) {
             }
             break;
         case 5:
-            cout << "e" << endl;
+            if (DebitCard* debitCard = dynamic_cast<DebitCard*>(card)) {
+                debitCard->reportsExpensesCategories(); // Вызов метода payment() для дебетовой карты
+            }
+            else if (CreditCard* creditCard = dynamic_cast<CreditCard*>(card)) {
+                creditCard->reportsExpensesCategories(); // Вызов метода payment() для кредитной карты
+            }
+            break;
         case 6:
-            cout << "e" << endl;
+            if (DebitCard* debitCard = dynamic_cast<DebitCard*>(card)) {
+                debitCard->reportsExpensesCategories(); // Вызов метода payment() для дебетовой карты
+            }
+            else if (CreditCard* creditCard = dynamic_cast<CreditCard*>(card)) {
+                creditCard->reportsExpensesCategories(); // Вызов метода payment() для кредитной карты
+            }
+            break;
         case 0:
             exit(0);
         default:
